@@ -1,0 +1,71 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap');
+#add-todo > label, button.add-btn, input#add, li > p {
+  font-family: 'Waiting for the Sunrise', sans-serif;
+}
+
+#wrap {
+  text-align: center;
+}
+#add-todo > label {
+  font-size: 36px;
+  display: block;
+  margin-top: 50px;
+  margin-bottom: -10px;
+}
+input#add {
+  width: 200px;
+  padding: 10px;
+  font-size: 24px;
+  border: none;
+  border-bottom: solid 2px;
+  outline: none;
+}
+button.add-btn {
+  font-size: 24px;
+  color: #fff;
+  margin-left: 10px;
+  padding: 2px 8px;
+  background-color: #575757;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#postit {
+  width: 400px;
+  height: 600px;
+  background-color: #FFF6D9;
+  margin: 0 auto;
+  margin-top: 60px;
+  padding: 43px 48px;
+}
+h2.title {
+  font-family:'Walter Turncoat', sans-serif;
+  font-size: 40px;
+  margin-bottom: 45px;
+}
+#todo-area {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  vertical-align: middle;
+  gap: 12px;
+}
+li > input {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  border: 1px solid #575757;
+}
+li > input:checked {
+  background-color: #575757;
+}
+li > p {
+  font-size: 32px;
+}

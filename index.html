@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
+  <title>Todo-list</title>
+</head>
+<body>
+  <div id="wrap">
+    <div id="add-todo">
+      <label for="add">Write to do</label>
+      <input type="text" id="add">
+      <button class="add-btn" onclick="submit()">Add</button>
+    </div>
+    <div id="postit">
+      <div class="text-area">
+        <h2 class="title">To-do List</h2>
+        <ul id="todo-area">
+          <!--
+          <li id="todo">
+            <input type="checkbox" name="checkbox">
+            <p>text</p>
+          </li>
+          -->
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
