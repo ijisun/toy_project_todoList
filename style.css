@@ -35,8 +35,7 @@ button.add-btn {
   width: 400px;
   height: 600px;
   background-color: #FFF6D9;
-  margin: 0 auto;
-  margin-top: 60px;
+  margin: 60px auto;
   padding: 43px 48px;
 }
 h2.title {
