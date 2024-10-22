@@ -1,70 +1,71 @@
-/* font */
-@import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap');
-#add-todo > label, button.add-btn, input#add, li > p {
-  font-family: 'Waiting for the Sunrise', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+/* reset */
+input, button {
+  all: unset;
 }
 
-#wrap {
-  text-align: center;
+body {
+  font-family: "Rajdhani", sans-serif;
+  margin: 0;
+  background-image: url(images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-#add-todo > label {
-  font-size: 36px;
-  display: block;
-  margin-top: 50px;
-  margin-bottom: -10px;
+.container {
+  box-sizing: border-box;
+  background-color: #ffffffc4;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-top: 8px solid #57746c;
+  border-bottom: 8px solid #57746c;
+  height: 100%;
+  min-height: 100vh;
 }
-input#add {
-  width: 200px;
-  padding: 10px;
-  font-size: 24px;
-  border: none;
-  border-bottom: solid 2px;
-  outline: none;
+h1 {
+  font-weight: 500;
+  margin: 0;
+  padding: 0.125rem 0 0.5rem;
 }
-button.add-btn {
-  font-size: 24px;
-  color: #fff;
-  margin-left: 10px;
-  padding: 2px 8px;
-  background-color: #575757;
-  border-radius: 8px;
+input {
+  border: 1px solid #9cb3ad;
+  width: 80%;
+  padding: 0.25rem;
+}
+button {
+  background-color: #57746c;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  margin-left: 0.25rem;
   cursor: pointer;
 }
-#postit {
-  width: 400px;
-  height: 600px;
-  background-color: #FFF6D9;
-  margin: 60px auto;
-  padding: 43px 48px;
+.task-area {
+  border: 1px solid #9cb3ad;
+  margin-top: 0.9rem;
 }
-h2.title {
-  font-family:'Walter Turncoat', sans-serif;
-  font-size: 40px;
-  margin-bottom: 45px;
-}
-#todo-area {
+.task-taps {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  border-bottom: 1px solid #9cb3ad;
+  position: relative;
 }
-li {
+.task-taps div {
+  padding: 0.5rem 1rem;
+}
+#under-line {
+  height: 0.25rem;
+  background-color: #57746c;
+  position: absolute;
+  width: 0;
+  left: 0;
+  top: 0;
+  padding: 0;
+  transition: 0.4s;
+}
+#task {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  vertical-align: middle;
-  gap: 12px;
+  justify-content: space-between;
+  padding: 1rem;
 }
-li > input {
-  appearance: none;
-  width: 30px;
-  height: 30px;
-  border-radius: 8px;
-  border: 1px solid #575757;
-}
-li > input:checked {
-  background-color: #575757;
-}
-li > p {
-  font-size: 32px;
+.icon {
+  background-color: #ffffff00;
+  color: #57746c;
 }
