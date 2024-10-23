@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbit&display=swap');
 
 /* reset */
 input, button {
@@ -6,7 +7,7 @@ input, button {
 }
 
 body {
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Rajdhani", "Orbit";
   margin: 0;
   background-image: url(images/background.jpg);
   background-repeat: no-repeat;
