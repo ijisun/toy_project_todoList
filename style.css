@@ -31,11 +31,16 @@ input {
   width: 80%;
   padding: 0.25rem;
 }
+#add-btn{
+  padding: 0.25rem 0.5rem;
+  margin-left: 0.25rem;
+  border: 1px solid #57746c;
+}
 button {
   background-color: #57746c;
   color: white;
-  padding: 0.25rem 0.5rem;
-  margin-left: 0.25rem;
+  padding: 0.25rem 0.75rem;
+  margin-left: 0.75rem;
   cursor: pointer;
 }
 .task-area {
@@ -49,23 +54,32 @@ button {
 }
 .task-taps div {
   padding: 0.5rem 1rem;
+  cursor: pointer;
 }
 #under-line {
   height: 0.25rem;
   background-color: #57746c;
   position: absolute;
-  width: 0;
+  width: 47px;
   left: 0;
-  top: 0;
+  top: 38px;
   padding: 0;
   transition: 0.4s;
 }
 #task {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1rem;
+  border-bottom: 1px solid #9cb3ad;
 }
 .icon {
   background-color: #ffffff00;
   color: #57746c;
+}
+.task-done {
+  text-decoration: line-through;
+}
+.task-done-color {
+  background-color: lightgray;
 }

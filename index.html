@@ -12,14 +12,14 @@
     <h1>To Do List</h1>
     <section class="input-area">
       <input type="text" id="task-input" placeholder="오늘의 할일은?">
-      <button id="add-btn">+</button>
+      <button id="add-btn" onclick="addTask()">+</button>
     </section>
     <section class="task-area">
       <div class="task-taps">
         <div id="under-line"></div>
-        <div class="task-tap">All</div>
-        <div class="task-tap">Progress</div>
-        <div class="task-tap">Done</div>
+        <div id="all" class="task-tap">All</div>
+        <div id="ongoing" class="task-tap">Progress</div>
+        <div id="done" class="task-tap">Done</div>
       </div>
       <div id="task-board">
         <!--추가한 task 입력될 영역-->
